@@ -1,17 +1,11 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-import cors from "cors";
 import path from "path";
 import compression from "compression";
 
 const app = express();
 const __dirname = path.resolve();
 
-/* use cors if you want deploy your frontend on different origin */
-//app.use(cors({
-//    origin: "http://localhost:5173",
-//    credentials: true
-//}));
 
 app.use(compression());
 app.use(express.json({ limit: "32kb"}));
