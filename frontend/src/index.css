@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .noteNavBtn {
+        @apply px-1 py-1 text-white font-semibold rounded-md border border-black min-w-20 text-lg font-serif
+        transition ease-in-out delay-100 hover:scale-105 
+    }
+
+    .btnTransition {
+        @apply transition ease-in-out delay-100 hover:scale-105
+    }
+
+    .noteCard {
+        @apply bg-white py-4 px-8 m-2 border border-black  rounded-md transition ease-in-out delay-150 hover:scale-105 flex flex-col gap-3
+                hover:shadow-lg hover:shadow-blue-400
+    }
+
+    .SLbtn {
+        @apply px-3 py-1.5 font-serif font-semibold text-xl rounded-full text-center border-2 transition ease-in-out delay-150 
+                hover:scale-y-110 hover:shadow-lg
+    }
+}
