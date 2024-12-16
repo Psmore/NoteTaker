@@ -24,7 +24,7 @@ This project is ideal for anyone looking to quickly jot down and organize their 
 ## Getting Started
 
 Follow these steps to run the application locally on your machine.
-- git clone [github.com/project-link](https://github.com/Psmore/NoteTaker.git)
+- git clone [https://github.com/Psmore/NoteTaker.git](https://github.com/Psmore/NoteTaker.git)
 - cd NoteTaker
 - npm run build
 - npm run start
