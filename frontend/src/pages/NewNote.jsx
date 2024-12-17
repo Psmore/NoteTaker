@@ -76,6 +76,10 @@ export default function NewNote() {
                   </button>
                 </div>
 
+                <div className="flex flex-col gap-1">
+                <h2 className="text-2xl font-semibold font-serif">
+                      Heading
+                </h2>
                 <input
                   className="text-xl border py-2 px-4 sm:min-w-max rounded-lg"
                   type="text"
@@ -87,6 +91,9 @@ export default function NewNote() {
                 {errors?.heading && (
                   <p className="text-red-500">{errors?.heading?.message}</p>
                 )}
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-2xl font-semibold font-serif">Tags: </h2>
                 <Controller
                   name="tags"
                   control={control}
@@ -100,7 +107,10 @@ export default function NewNote() {
                     />
                   )}
                 />
+                </div>
 
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-2xl font-semibold font-serif">Enter Note</h2>
                 <textarea
                   rows={20}
                   className="border shadow-inner shoadow-lg px-4 py-2"
@@ -112,6 +122,7 @@ export default function NewNote() {
                     },
                   })}
                 ></textarea>
+                </div>
                 {errors?.noteData && (
                   <p className="text-red-500">{errors?.noteData?.message}</p>
                 )}
