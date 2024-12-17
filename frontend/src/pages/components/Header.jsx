@@ -49,7 +49,7 @@ export default function Header() {
   return (
     <ErrorBoundary fallback={<Errorfallback />}>
       <Suspense fallback={<SuspenseFallback />}>
-        <header className="flex items-center justify-between px-3 py-3 sticky border-b-2 shadow-sm">
+        <header className="flex items-center justify-between w-4/5 px-3 py-3 sticky border-b-2 shadow-sm">
           <Link to="/">
             <h1 className="text-3xl font-semibold font-serif">
               Note<span className="text-blue-600">Taker</span>

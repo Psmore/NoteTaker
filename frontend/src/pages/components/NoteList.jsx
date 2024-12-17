@@ -29,7 +29,7 @@ export default function NoteList() {
     <>
       <ErrorBoundary fallback={<Errorfallback />}>
         <Suspense fallback={<SuspenseFallback />}>
-          <div className="py-8 px-4">
+          <div className="py-8 px-4 flex flex-col">
             <div className="flex gap-4">
               <button
                 className="px-4 py-2 rounded-md border border-black font-semibold btnTransition hover:text-white hover:bg-black"
