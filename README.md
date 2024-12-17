@@ -46,3 +46,12 @@ To run this project, you need to set the following environment variables in a `.
 
 ### Login page
 ![Login page](docs/images/Login-page.png)
+
+### Creating new Note page
+![New note page](docs/images//new-page.png)
+
+### Edit page
+![Edit page](docs/images/edit-page.png)
+
+### View page
+![View page](docs/images/view-page.png)
