@@ -1,7 +1,9 @@
 import User from "../models/user.model.js";
+import Note from "../models/note.model.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/apiError.js"
 import { options } from "../utils/option.js";
+
 
 const generateToken = async function(userId) {
     try {
@@ -129,6 +131,9 @@ export const changeUserPassword = asyncHandler( async(req, res) => {
 });
 
 export const deleteUser = asyncHandler( async(req, res) => {
+    /* delete the all the notes before deleting the user */
+    const deleteNotes = await Note.deleteMany({ owner: req.user._id });
+    
     const deletedUser = await User.findByIdAndDelete(req.user._id);
     if(!deleteUser) {
         throw new ApiError(409, "User not found or User already Deleted");
